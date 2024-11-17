@@ -21,7 +21,7 @@ A Dockerized Discord bot that monitors disk space and uptime on a Synology NAS. 
 Download or clone the repository to your local machine or Synology NAS:
 
 ```bash
-git clone https://github.com/yourusername/synology-discord-monitor.git
+git clone https://github.com/Rfkgaming89/discord-synology-monitor.git
 ```
 
 ### 2. Create a Discord Bot Token
