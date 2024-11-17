@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  discord-bot:
+    build: .
+    container_name: discord-bot
+    volumes:
+      - /volume1:/volume1  # Mounting the host's /volume1 to the container's /volume1
+      - /volume2:/volume2  # Mounting the host's /volume2 to the container's /volume2
+      - ./app:/app  # If you want to mount the app directory inside the container
+    restart: unless-stopped
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}  # Make sure the token is loaded from .env
